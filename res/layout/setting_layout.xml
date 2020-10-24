@@ -1,0 +1,16 @@
+    <PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory android:title="通知設定">
+            <ListPreference
+                android:key="pretime"
+                android:title="通知タイミング"
+                android:dialogTitle="通知タイミング"
+                android:entries="@array/pretime_list"
+                android:defaultValue="300000"
+                android:entryValues="@array/pretime_values" />
+         	<CheckBoxPreference
+                android:key="vib"
+                android:defaultValue="true"
+                android:title="バイブレーション" />
+        </PreferenceCategory>
+    </PreferenceScreen>
